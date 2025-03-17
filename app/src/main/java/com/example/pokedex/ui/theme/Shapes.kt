@@ -1,8 +1,9 @@
 package com.example.pokedex.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Shapes
 //noinspection UsingMaterialAndMaterial3Libraries
-import androidx.compose.material.Shapes
+
 import androidx.compose.ui.unit.dp
 
 val Shapes = Shapes(

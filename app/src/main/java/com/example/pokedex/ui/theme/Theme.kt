@@ -1,22 +1,17 @@
 package com.example.pokedex.ui.theme
 
-//noinspection UsingMaterialAndMaterial3Libraries
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
-//noinspection UsingMaterialAndMaterial3Libraries
-import androidx.compose.material.MaterialTheme.colors
-//noinspection UsingMaterialAndMaterial3Libraries
-import androidx.compose.material.darkColors
-//noinspection UsingMaterialAndMaterial3Libraries
-import androidx.compose.material.lightColors
+import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 
-private val DarkColorPalette = darkColors(
+private val DarkColorPalette = darkColorScheme(
     primary = Color.Yellow,
     background = Color(0xFF101010),
     onBackground = Color.White,
@@ -24,7 +19,7 @@ private val DarkColorPalette = darkColors(
     onSurface = Color.White
 )
 
-private val LightColorPalette = lightColors(
+private val LightColorPalette = lightColorScheme(
     primary = Color.Blue,
     background = LightBlue,
     onBackground = Color.Black,
@@ -48,8 +43,8 @@ fun PokeDexTheme(
       else -> LightColorPalette
     }
 
-    androidx.compose.material.MaterialTheme(
-        colors = colors,
+    androidx.compose.material3.MaterialTheme(
+        colorScheme,
         typography = Typography,
         shapes = Shapes,
         content = content
